@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <div style="display: none;" id="cursor-dot"></div>
+  <div style="display: none;" id="cursor-dot-outline"></div>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div id="ping-indicator">
+        <i class="fas fa-signal"></i> <span id="ping-text"></span>
+      </div>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="images/my-avatar.png" alt="DEEPAK" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="DEEPAK">V-Deepak-akash</h1>
+
+          <p class="title hide-cursor-dot">Software Engineer<br>Full stack web Developer</br>Python Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:v.deepakakash@gmail.com" class="contact-link">v.deepakakash@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+919952375077" class="contact-link">+91 9952375077</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2003-10-08">October 08, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/V-Deepak-akash" target="_blank" rel="noopener noreferrer" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/v-deepak-akash" target="_blank" rel="noopener noreferrer"
+              class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/deepak.akash.73" target="_blank" rel="noopener noreferrer"
+              class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+
+          <li class="social-item">
+            <a href="https://x.com/DPK_REMO" target="_blank" rel="noopener noreferrer" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/dpk_remo/profilecard/?igsh=bWdieDNhaWJhOThv" target="_blank"
+              rel="noopener noreferrer" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Skillset</button>
+          </li>
+
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Comments</button>
+          </li>
+
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text hide-cursor-dot">
+
+          <p>
+            Hey there! I'm a Computer Science grad with a passion for coding and experimenting with new tech.
+          </p>
+
+          <p>
+            I love working with AI and voice assistants. Currently, I'm focused on adding cool features to
+            <strong>BLUE - The AI Voice Assistant</strong>, my personal voice assistant (not quite as cool as Iron
+            Man’s, but getting there!). It helps you do stuff with voice control, and I’m always adding new features
+            to make it even more useful.
+          </p>
+
+          <p>
+            I’m on a mission to automate everything I can — and even the things I can’t automate, I try to figure out
+            how to make them easier. Who doesn't love saving time, right?
+          </p>
+
+          <p>
+            Some of the projects I’ve worked on during my college days include:
+          </p>
+          <ul>
+            <li><strong>AI-Powered Legal Documentation Assistant:</strong> Built for a hackathon, it automates legal
+              processes using AI.</li>
+            <li><strong>JARVIS:</strong> My personal voice assistant. Still a work in progress, but always adding new
+              features!</li>
+            <li><strong>Data Leakage Detection in Cloud Computing:</strong> Ensuring data security in cloud
+              environments with automated monitoring.</li>
+          </ul>
+          <br>
+          <p>
+            I’m also super into emerging tech like <strong>AI</strong> and <strong>Blockchain</strong>, and I’m always
+            experimenting with how they can make life more fun and efficient. I even tried to create a crypto token
+            (spoiler: I failed 😂), but I love trying new things and building automation software to save time
+            wherever I can.
+          </p>
+
+          <p>
+            Want to know more? Feel free to check out my page and hit me up if you're into tech, cool projects, or
+            just want to chat about the latest trends!
+          </p>
+
+          <!-- Quote Toggle Section -->
+          <button class="hide-cursor-dot" id="fav-quote">Fav Quote - Click Here</button>
+
+          <div id="quote-message">
+            <div class="quote-container">
+              <blockquote class="quote hide-cursor-dot">
+                "The two most important things that I look for are<br><br>
+                Number one is just raw intelligence, right?<br><br>
+                I mean you can hire someone who's a software engineer and<br>
+                has been doing it for 10 years, and if they're doing it for<br>
+                10 years, then that's probably what they're doing for their life,<br>
+                you know? And I mean that's cool.<br><br>
+                But if you find someone who is raw in intelligence<br>
+                exceeds theirs but has 10 years less of experience<br>
+                then they can probably adapt and learn way quicker.<br><br>
+                You know, and within a very short amount of time be able to<br>
+                do a lot of things that that person may never be able to do.<br><br>
+                And so, I think that's the most important thing that I look for.<br><br>
+                And the second is just alignment with what we're trying to do.<br><br>
+                People can be really smart or have skills that are<br>
+                directly applicable, but if they don't really believe in it,<br>
+                then they're not going to really work hard, and they're not going to<br>
+                even care enough to develop the relevant experience in order to succeed."
+              </blockquote>
+              <cite class="author">Mark Zuckerberg</cite>
+            </div>
+          </div>
+
+
+
+
+        </section>
+
+
+
+
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="images/icon-ai.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Automation & AI</h4>
+
+                <p class="service-item-text">
+                  Developing intelligent automation and AI solutions to streamline processes.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">UI/UX Design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="images/icon-database.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Database Management</h4>
+
+                <p class="service-item-text">
+                  Managing and optimizing databases for efficient data handling and performance.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Skills</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card hide-cursor-dot" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Python Backend & Frontend Development
+                </h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    <strong>Backend & Frontend (Tkinter):</strong> Building desktop applications with Python, using
+                    Tkinter for GUI and backend integration.<br>
+                    <strong>Automation, Bot, and AI Development:</strong> Developing custom automation solutions,
+                    intelligent bots, and AI-driven applications.<br>
+                    <strong>Machine Learning & Data Science:</strong> Leveraging Python libraries to create predictive
+                    models and analyze data.<br>
+                    <strong>Data Manipulation:</strong> Expertise in data handling with Pandas and NumPy.<br>
+                    <strong>Computer Vision (OpenCV):</strong> Experience in image processing and object detection.<br>
+                    <strong>NLP & Web Scraping:</strong> Using NLP for language analysis and Beautiful Soup for data
+                    extraction.<br>
+                    <strong>Cryptography:</strong> Implementing data encryption and secure data handling with Python.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card hide-cursor-dot" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Full Stack Web Development</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    <strong>Frontend (HTML, CSS, JavaScript):</strong> Creating attractive, responsive, and dynamic
+                    webpages using HTML, CSS, and JavaScript, focusing on engaging user experiences and optimal
+                    performance.<br>
+                    <strong>Backend Development:</strong> Utilizing Python with the Eel module for backend functionality
+                    and PHP for server-side processes, ensuring seamless backend logic, data handling, and server
+                    interactions for robust web applications.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card hide-cursor-dot" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>UI/UX Designing</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    <strong>Design Tools (Figma, Adobe XD, Photoshop, Illustrator):</strong> Proficient in designing
+                    high-quality, professional UI/UX, creating visually appealing and user-centric layouts with design
+                    tools like Figma, Adobe XD, Photoshop, and Illustrator.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card hide-cursor-dot" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Database Management</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    <strong>MySQL:</strong> Skilled in MySQL for relational database management, data storage, and
+                    handling backend data requirements to maintain reliable and scalable databases for applications.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <!--<time datetime="2021-06-14">14 June, 2021</time>-->
+
+              <div data-modal-text>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Interests</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <img src="images/logo-1-color.png" alt="client logo">
+            </li>
+
+            <li class="clients-item">
+              <img src="images/logo-2-color.png" alt="client logo">
+            </li>
+
+            <li class="clients-item">
+              <img src="images/logo-3-color.png" alt="client logo">
+            </li>
+
+            <li class="clients-item">
+              <img src="images/logo-4-color.png" alt="client logo">
+            </li>
+
+          </ul>
+
+        </section>
+      </article>
+
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Panimalar Institute Of Technology (PIT)</h4>
+
+              <span>2021 — 2024</span>
+
+              <p class="timeline-text">
+                B.E COMPUTER SCIENCE OF TECHNOLOGY
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">T.K.V Matric.Hr.Sec.School</h4>
+
+              <span>2019 — 2020</span>
+
+              <p class="timeline-text">
+                12TH
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">T.K.V Matric.Hr.Sec.School</h4>
+
+              <span>2017 — 2018</span>
+
+              <p class="timeline-text">
+                10TH
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web Developer (Internship)</h4>
+
+              <span>Present</span>
+
+              <p class="timeline-text">
+                <strong>Professional Experience:</strong> I am currently an intern at <strong>Unified Trading</strong>,
+                gaining hands-on experience as a:
+              </p>
+              <div class="roles">
+                <span class="title hide-cursor-dot">Web Developer</span>
+                <span class="title hide-cursor-dot">Database Manager</span>
+                <span class="title hide-cursor-dot">Python Backend Developer</span>
+              </div>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python development</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Full Stack Web Development</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">UI/UX Design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+          </ul>
+
+        </section>
+        <section class="resumeresume">
+          <div id="btn-download">
+            <svg width="22px" height="16px" viewBox="0 0 22 16">
+              <path
+                d="M2,10 L6,13 L12.8760559,4.5959317 C14.1180021,3.0779974 16.2457925,2.62289624 18,3.5 L18,3.5 C19.8385982,4.4192991 21,6.29848669 21,8.35410197 L21,10 C21,12.7614237 18.7614237,15 16,15 L1,15"
+                id="check"></path>
+              <polyline points="4.5 8.5 8 11 11.5 8.5" class="svg-out"></polyline>
+              <path d="M8,1 L8,11" class="svg-out"></path>
+            </svg>
+          </div>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        </section>
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Software development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Automation</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Software development</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Automation</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="social-link">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="images/project-1.jpg" alt="Portfolio" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Portfolio</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/V-Deepak-akash/SRS-CHAT-WEBSITE.git" target="_blank" rel="noopener noreferrer"
+                class="social-link">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="images/project-2.jpg" alt="Chat website" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">SRS Chat website</h3>
+
+                <p class="project-category">Application</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/V-Deepak-akash/survey-project.git" target="_blank" rel="noopener noreferrer"
+                class="social-link">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="images/project-3.png" alt="Survey bet" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Survey bet</h3>
+
+                <p class="project-category">Application</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="software development">
+              <a href="https://github.com/V-Deepak-akash/NIFTY-STOCK-TRACKER.git" target="_blank"
+                rel="noopener noreferrer" class="social-link">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="images/project-4.png" alt="Nifty Stock Tracker" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Nifty Stock Tracker</h3>
+
+                <p class="project-category">Software Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a onclick="showstillindevelop()" class="social-link">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="images/project-5.png" alt="Easy Customizable portfolio" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Customizable portfolio</h3>
+
+                <p class="project-category">web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="automation">
+              <a href="https://github.com/V-Deepak-akash/YoutubeFakeViews.git" target="_blank" rel="noopener noreferrer"
+                class="social-link">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="images/project-6.png" alt="Youtube Bot" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Youtube Bot</h3>
+
+                <p class="project-category">Automation</p>
+
+              </a>
+
+            </li>
+          </ul>
+
+        </section>
+
+        <!-- Toast notification (initially hidden) -->
+        <div id="toast" class="toast">
+          <div class="toast-content-wrapper">
+            <div class="toast-icon"></div>
+            <div class="toast-message"></div>
+            <div class="toast-progress"></div>
+          </div>
+        </div>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #Skillset
+      -->
+
+      <article class="skillset" data-page="skillset">
+        <header>
+          <h2 class="h2 article-title">Expertise</h2>
+        </header>
+
+        <div class="skills">
+          <span class="title hide-cursor-dot">Python</span>
+          <span class="title hide-cursor-dot">HTML/CSS</span>
+          <span class="title hide-cursor-dot">JavaScript</span>
+          <span class="title hide-cursor-dot">UI/UX Design</span>
+          <span class="title hide-cursor-dot">Adobe XD</span>
+          <span class="title hide-cursor-dot">Figma</span>
+        </div>
+
+        <section class="projects">
+
+          <ul class="filter-list12">
+
+            <li class="filter-item12">
+              <button class="active12" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item12">
+              <button data-filter-btn>Programming</button>
+            </li>
+
+            <li class="filter-item12">
+              <button data-filter-btn>Frameworks</button>
+            </li>
+
+            <li class="filter-item12">
+              <button data-filter-btn>Databases</button>
+            </li>
+
+            <li class="filter-item12">
+              <button data-filter-btn>NLP</button>
+            </li>
+
+            <li class="filter-item12">
+              <button data-filter-btn>Web-Dev</button>
+            </li>
+
+            <li class="filter-item12">
+              <button data-filter-btn>Data-Sci</button>
+            </li>
+
+            <li class="filter-item12">
+              <button data-filter-btn>Design</button>
+            </li>
+
+            <li class="filter-item12">
+              <button data-filter-btn>Tools</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box12">
+
+            <button class="filter-select12" data-select12>
+
+              <div class="select-value12" data-selecct-value12>Select category</div>
+
+              <div class="select-icon12">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list12">
+
+              <li class="select-item12">
+                <button data-select12-item>All</button>
+              </li>
+
+              <li class="select-item12">
+                <button data-select12-item>Programming</button>
+              </li>
+
+              <li class="select-item12">
+                <button data-select12-item>Frameworks</button>
+              </li>
+
+              <li class="select-item12">
+                <button data-select12-item>Databases</button>
+              </li>
+
+              <li class="select-item12">
+                <button data-select12-item>NLP</button>
+              </li>
+
+              <li class="select-item12">
+                <button data-select12-item>Web-Dev</button>
+              </li>
+
+              <li class="select-item12">
+                <button data-select12-item>Data-Sci</button>
+              </li>
+
+              <li class="select-item12">
+                <button data-select12-item>Design</button>
+              </li>
+
+              <li class="select-item12">
+                <button data-select12-item>Tools</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list12">
+
+            <li class="project-item12  active12" data-filter-item12 data-category="programming">
+              <div class="skill-card">
+                <h4 class="h4 skill-card-title">Python</h4>
+                <p class="skill-card-text">Expert in developing robust Python solutions, ranging from scalable web
+                  applications to complex
+                  automation scripts and machine learning projects. Skilled in creating clean, efficient, and
+                  maintainable code.</p>
+              </div>
+            </li>
+
+            <li class="project-item12  active12" data-filter-item12 data-category="programming">
+              <div class="skill-card">
+                <h4 class="h4 skill-card-title">JavaScript (JS)</h4>
+                <p class="skill-card-text">Proficient in building dynamic, interactive web pages and modern front-end
+                  features that enhance user
+                  experience. Experience in integrating JavaScript with APIs and frameworks for seamless
+                  functionality.</p>
+              </div>
+            </li>
+
+            <li class="project-item12  active12" data-filter-item12 data-category="programming">
+              <div class="skill-card">
+                <h4 class="h4 skill-card-title">PHP</h4>
+                <p class="skill-card-text">Experience in server-side scripting, developing dynamic websites, and
+                  integrating databases to ensure
+                  seamless backend functionality in web applications.</p>
+              </div>
+            </li>
+
+            <li class="project-item12  active12" data-filter-item12 data-category="programming">
+              <div class="skill-card">
+                <h4 class="h4 skill-card-title">Debugging</h4>
+                <p class="skill-card-text">Adept at identifying and resolving code issues across various programming
+                  languages and platforms,
+                  ensuring software reliability and smooth user experiences.</p>
+              </div>
+            </li>
+
+            <li class="project-item12  active12" data-filter-item12 data-category="frameworks">
+              <div class="skill-card">
+                <h4 class="h4 skill-card-title">Flask</h4>
+                <p class="skill-card-text">Proficient in creating lightweight, scalable web applications and REST APIs
+                  using Flask. Experience
+                  in optimizing Flask projects for high performance and maintainability.</p>
+              </div>
+            </li>
+
+            <li class="project-item12  active12" data-filter-item12 data-category="frameworks">
+              <div class="skill-card">
+                <h4 class="h4 skill-card-title">Eel</h4>
+                <p class="skill-card-text">Developed engaging desktop applications with web-style interfaces by
+                  integrating Python backends and
+                  JavaScript/HTML frontends through Eel.</p>
+              </div>
+            </li>
+
+            <li class="project-item12  active12" data-filter-item12 data-category="frameworks">
+              <div class="skill-card">
+                <h4 class="h4 skill-card-title">Streamlit</h4>
+                <p class="skill-card-text">Skilled in building interactive, real-time dashboards for data visualization
+                  and machine learning
+                  applications using Streamlit.</p>
+              </div>
+            </li>
+
+            <li class="project-item12  active12" data-filter-item12 data-category="databases">
+              <div class="skill-card">
+                <h4 class="h4 skill-card-title">MySQL</h4>
+                <p class="skill-card-text">Extensive experience in designing, implementing, and managing MySQL
+                  databases. Adept at optimizing
+                  queries and ensuring seamless integration with back-end applications.</p>
+              </div>
+            </li>
+
+            <li class="project-item12  active12" data-filter-item12 data-category="nlp">
+              <div class="skill-card">
+                <h4 class="h4 skill-card-title">NLTK</h4>
+                <p class="skill-card-text">Specialized in performing text analysis, natural language understanding, and
+                  data preprocessing tasks
+                  using NLTK for real-world NLP applications.</p>
+              </div>
+            </li>
+
+            <li class="project-item12  active12" data-filter-item12 data-category="nlp">
+              <div class="skill-card">
+                <h4 class="h4 skill-card-title">iNLTK</h4>
+                <p class="skill-card-text">Expert in processing and analyzing text data in Indian languages, enabling
+                  the development of
+                  culturally relevant language-based applications.</p>
+              </div>
+            </li>
+
+            <li class="project-item12  active12" data-filter-item12 data-category="nlp">
+              <div class="skill-card">
+                <h4 class="h4 skill-card-title">NLP</h4>
+                <p class="skill-card-text">Deep expertise in designing and implementing natural language processing
+                  models for sentiment
+                  analysis, text classification, and conversational AI.</p>
+              </div>
+            </li>
+
+            <li class="project-item12  active12" data-filter-item12 data-category="web-dev">
+              <div class="skill-card">
+                <h4 class="h4 skill-card-title">HTML & CSS</h4>
+                <p class="skill-card-text">Proficient in creating responsive, visually appealing web designs with modern
+                  HTML5 and CSS3
+                  techniques, ensuring compatibility across all devices and browsers.</p>
+              </div>
+            </li>
+
+            <li class="project-item12  active12" data-filter-item12 data-category="web-dev">
+              <div class="skill-card">
+                <h4 class="h4 skill-card-title">Beautiful Soup</h4>
+                <p class="skill-card-text">Experience in web scraping to extract valuable data from websites, enabling
+                  insights and integration
+                  with data-driven applications.</p>
+              </div>
+            </li>
+
+            <li class="project-item12  active12" data-filter-item12 data-category="web-dev">
+              <div class="skill-card">
+                <h4 class="h4 skill-card-title">REST API</h4>
+                <p class="skill-card-text">Skilled in designing, implementing, and consuming RESTful APIs for seamless
+                  integration between
+                  front-end and back-end systems.</p>
+              </div>
+            </li>
+
+            <li class="project-item12  active12" data-filter-item12 data-category="data-sci">
+              <div class="skill-card">
+                <h4 class="h4 skill-card-title">Pandas</h4>
+                <p class="skill-card-text">Expert in data manipulation and transformation using Pandas for data
+                  cleaning, analysis, and
+                  preparation for machine learning workflows.</p>
+              </div>
+            </li>
+
+            <li class="project-item12  active12" data-filter-item12 data-category="data-sci">
+              <div class="skill-card">
+                <h4 class="h4 skill-card-title">Matplotlib</h4>
+                <p class="skill-card-text">Proficient in creating detailed and impactful data visualizations to uncover
+                  insights and communicate
+                  findings effectively.</p>
+              </div>
+            </li>
+
+            <li class="project-item12  active12" data-filter-item12 data-category="data-sci">
+              <div class="skill-card">
+                <h4 class="h4 skill-card-title">Requests</h4>
+                <p class="skill-card-text">Efficient in handling HTTP requests for data acquisition and integration with
+                  APIs, enabling dynamic
+                  and connected applications.</p>
+              </div>
+            </li>
+
+            <li class="project-item12  active12" data-filter-item12 data-category="design">
+              <div class="skill-card">
+                <h4 class="h4 skill-card-title">Figma</h4>
+                <p class="skill-card-text">Experience in crafting intuitive and aesthetically pleasing UI/UX designs,
+                  wireframes, and prototypes
+                  for web and mobile applications.</p>
+              </div>
+            </li>
+
+            <li class="project-item12  active12" data-filter-item12 data-category="design">
+              <div class="skill-card">
+                <h4 class="h4 skill-card-title">Tkinter</h4>
+                <p class="skill-card-text">Proficient in building user-friendly graphical interfaces for desktop
+                  applications, enabling
+                  intuitive and interactive user experiences.</p>
+              </div>
+            </li>
+
+            <li class="project-item12 active12" data-filter-item12 data-category="tools">
+              <div class="skill-card">
+                <h4 class="h4 skill-card-title">PyInstaller</h4>
+                <p class="skill-card-text">Proficient in converting Python scripts into standalone executables, ensuring
+                  seamless software distribution across platforms.</p>
+              </div>
+            </li>
+
+
+          </ul>
+          <section style="cursor: pointer;" id="projects-skillset">
+            <h3 class="h3 service-title">Projects</h3>
+            <div class="project-card" onclick="openModal12('voice-assistant')">
+              <h4 class="h4 skill-card-title">Advanced Voice Assistant</h4>
+              <p class="skill-card-text">An intelligent Python-based assistant showcasing a wide range of skills,
+                designed for real-world
+                usability and exceptional versatility.</p>
+            </div>
+          </section>
+
+        </section>
+        <!-- Modal -->
+        <div id="modal12" class="modal12" onclick="closeModal12(event)">
+          <div class="modal-content12" onclick="event.stopPropagation()">
+            <span class="close-btn12" onclick="closeModal12()">&times;</span>
+            <div id="modal-body12"></div>
+          </div>
+        </div>
+      </article>
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe class="replace-with-default-cursor"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d151187.60493087453!2d80.11628325186027!3d12.958479035978916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526c3196d6e1fd%3A0x6a0c4e61c7a0e4c8!2sD208%2C%20Radiance%20The%20Pride%2C%20Pammal%20Main%20Road%2C%20Pallavaram%2C%20Chennai%2C%20Tamil%20Nadu%20460043!5e0!3m2!1sen!2sin!4v1695664582243!5m2!1sen!2sin"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="sendEmail.php" method="POST" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #COMMENTS
+      -->
+
+      <article class="comments" data-page="comments">
+
+        <header>
+          <h2 class="h2 article-title">Comments</h2>
+        </header>
+        <section id="reviews-section">
+          <div class="container">
+            <div id="views-count12"></div>
+            <form>
+              <textarea class="textarea12" id="review" placeholder="Write your review here..."></textarea>
+              <div id="stars12">
+                <span data-star="1">&#9733;</span>
+                <span data-star="2">&#9733;</span>
+                <span data-star="3">&#9733;</span>
+                <span data-star="4">&#9733;</span>
+                <span data-star="5">&#9733;</span>
+              </div>
+              <button class="submitreviewbtn12" id="submit-review-btn" type="button">Submit Review</button>
+            </form>
+            <div id="reviews"></div>
+            <button class="modifyreviewbtn12" id="modify-review-btn" type="button" style="display: none;">
+              Modify Your Review
+            </button>
+          </div>
+
+          <button class="hide-cursor-dot" id="privacy-toggle">i</button>
+
+          <div id="privacy-message">
+            <h3>Privacy Information</h3>
+            <p>I do not collect or store personal information such as your IP address or email. I use hashed IP
+              address for privacy and generate random usernames for comments.</p>
+            <p>Your comment is submitted anonymously without any personally identifiable information.</p>
+            <p>Your privacy is important.</p>
+          </div>
+        </section>
+
+        <div id="toast-comments" class="toast-comments">
+          <div class="toast-content-wrapper-comments">
+            <div class="toast-icon-comments"></div>
+            <div class="toast-message-comments"></div>
+            <div class="toast-progress-comments"></div>
+          </div>
+        </div>
+
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="cursor.js" defer></script>
+
+</body>
+
+</html>
