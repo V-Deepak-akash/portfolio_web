@@ -8,6 +8,11 @@ import random
 app = Flask(__name__)
 CORS(app)
 
+# Serve index.html
+@app.route('/')
+def home():
+    return app.send_static_file('index.html')
+
 # Function to hash IP for privacy
 def hash_ip(ip):
     return hashlib.sha256(ip.encode()).hexdigest()
